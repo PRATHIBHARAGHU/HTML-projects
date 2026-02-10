@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic single page portfolio</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        body{
+            background-color: beige;
+            color: rgb(67, 79, 190);
+        }
+        header{background: linear-gradient(135deg,skyblue,rebeccapurple);
+        text-align: center;}
+        header h1{
+            font-size: 36px;
+        }
+        header p{ margin-top: 10px; font-size: 18px;}
+        nav{ background-color: bisque; padding: 10px; text-align: center;}
+        nav a{ color: cadetblue; text-decoration: none; margin: 0 15px;
+        }
+        nav a:hover{color: brown  ; border-radius: 20%;padding: 10px; border: 60px; background-color: aliceblue;}
+
+        section{padding: 50px 20px; max-width: 1000px; margin: auto;}
+        section h2{text-align: center;}
+
+        .about{text-align: center;}
+        .skills{display: grid; gap: 12px; text-align: center; grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+        .skills{
+            background: white; padding:10px; border-radius: 20px;box-sizing: 0 40px 10px grey;
+        }
+        .projects{display: grid;gap: 20px;grid-template-columns: repeat(auto-fit,mainmax(250px,1fr));}
+        .projects{background: white;padding: 10px;border-radius:25px ;}
+        .project button{margin-top: 10px;padding: 8px 12px;background-color: antiquewhite; border: none ;border-radius: 15px; cursor: pointer;}
+        .project button:hover{background-color: blue;text-decoration-color: aliceblue;}
+        footer{background: #222;color: wheat;text-align: center; padding: 15px;}
+        
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Prathibha R</h1>
+        <p>Data Analyst</p>
+    </header>
+    <nav>
+        <a href="">ABOUT</a>
+        <a href="">SKILLS</a>
+        <a href="">PROJECTS</a>
+        <a href="">CONTACT</a>
+    </nav>
+    <section id="ABOUT">
+        <h2>About Me</h2>
+        <p class="about">I enjoy analysing data and  creating ineractive reports on the same</p>
+    </section>
+    <section id="SKILLS">
+        <h2>SKILLS</h2>
+        <div class="skill">Python</div>
+        <div class="skill">Tableau</div>
+        <div class="skill">PowerBI</div>
+        <div class="skill">Microsoft Excel</div>
+        <div class="skill">SQL</div>
+
+    </section>
+    <section id="PROJECTS">
+        <h2>PROJECTS</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Interactive Data analyser</h3>
+                <p>Data analyser using tabelau, powerBI</p>
+                <button onclick="alert"('project demo')>VIEW</button>
+            </div>
+        </div>
+    </section>
+    <section id="CONTACT">
+        <h2>CONTACT ME</h2>
+        <div class="Contact">
+        <input type="text" placeholder="your name">
+        <br>
+        <br>
+        <input type="email" placeholder="your email">
+        <br>
+        <br>
+        <textarea rows="5" placeholder="your message"></textarea>
+        <br>
+        <br>
+        <button onclick="SendMessage()">Send Messages!</button>
+        </div>
+        <br>
+        <br>
+    </section>
+    <footer>2026 Prathibha R | all rights reserved</footer>
+    <script>function SendMessage(){alert("your message has been sent!");}</script>
+</body>
+</html>
